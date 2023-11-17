@@ -1,11 +1,11 @@
 ﻿<Project>
   <PropertyGroup>
-    <DapperFastCrudModelGeneratorPath>$(MSBuildThisFileDirectory)/../contentFiles/any/any/Models/</DapperFastCrudModelGeneratorPath>
+    <DapperRapidCRUDModelGeneratorPath>$(MSBuildThisFileDirectory)/../contentFiles/any/any/Models/</DapperRapidCRUDModelGeneratorPath>
   </PropertyGroup>
 
   <ItemGroup>
-    <T4ParameterValues Include="DapperFastCrudModelGeneratorPath">
-      <Value>$(DapperFastCrudModelGeneratorPath)</Value>
+    <T4ParameterValues Include="DapperRapidCRUDModelGeneratorPath">
+      <Value>$(DapperRapidCRUDModelGeneratorPath)</Value>
     </T4ParameterValues>
   </ItemGroup>
 </Project>

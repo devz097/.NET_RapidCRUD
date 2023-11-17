@@ -1,4 +1,4 @@
-﻿namespace Dapper.FastCrud.Tests.Common
+﻿namespace Devz.RapidCRUD.Tests.Common
 {
     using System;
     using System.Collections;
@@ -7,7 +7,7 @@
     using System.IO;
     using System.Linq;
     using BoDi;
-    using Dapper.FastCrud.Tests.Contexts;
+    using Devz.RapidCRUD.Tests.Contexts;
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.Logging;
     using Newtonsoft.Json;

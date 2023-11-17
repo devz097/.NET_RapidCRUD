@@ -1,7 +1,7 @@
-﻿namespace Dapper.FastCrud.Tests.Features
+﻿namespace Devz.RapidCRUD.Tests.Features
 {
     using System;
-    using Dapper.FastCrud.Tests.Models;
+    using Devz.RapidCRUD.Tests.Models;
     using DeclarativeSql;
     using TechTalk.SpecFlow;
     using DeclarativeSql.Dapper;

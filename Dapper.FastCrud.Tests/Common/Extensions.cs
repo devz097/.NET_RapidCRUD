@@ -1,9 +1,9 @@
-﻿namespace Dapper.FastCrud.Tests.Common
+﻿namespace Devz.RapidCRUD.Tests.Common
 {
     using System.IO;
     using System.Linq;
     using System.Reflection;
-    using Dapper.FastCrud.Validations;
+    using Devz.RapidCRUD.Validations;
     using Microsoft.Extensions.Configuration;
 
     public static class Extensions

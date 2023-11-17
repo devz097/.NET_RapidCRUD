@@ -1,4 +1,4 @@
-﻿namespace Dapper.FastCrud.Configuration
+﻿namespace Devz.RapidCRUD.Configuration
 {
     /// <summary>
     /// Stores database options linked to a particular dialect.

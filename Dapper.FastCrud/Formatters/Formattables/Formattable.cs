@@ -1,9 +1,9 @@
-﻿namespace Dapper.FastCrud.Formatters.Formattables
+﻿namespace Devz.RapidCRUD.Formatters.Formattables
 {
     using System;
 
     /// <summary>
-    /// A formattable that can be used straight in the formattable strings representing various clauses in Dapper.FastCrud.
+    /// A formattable that can be used straight in the formattable strings representing various clauses in Devz.RapidCRUD.
     /// It can also be used on its own through <seealso cref="IFormattable.ToString(string,System.IFormatProvider)"/> or <seealso cref="ToString"/>.
     /// For more information, check the method that was used to create it in <seealso cref="Sql"/>.
     /// </summary>

@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
-    <AssemblyTitle>Dapper.FastCrud.Tests</AssemblyTitle>
-    <AssemblyName>Dapper.FastCrud.Tests</AssemblyName>
+    <AssemblyTitle>Devz.RapidCRUD.Tests</AssemblyTitle>
+    <AssemblyName>Devz.RapidCRUD.Tests</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
@@ -27,7 +27,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Dapper.FastCrud\Dapper.FastCrud.csproj" />
+    <ProjectReference Include="..\Devz.RapidCRUD\Devz.RapidCRUD.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -55,11 +55,11 @@
   -->
 
   <ItemGroup>
-    <EditorConfigFiles Remove="D:\Code\Dapper.FastCRUD\Dapper.FastCrud.Tests\.editorconfig" />
+    <EditorConfigFiles Remove="D:\Code\Devz.RapidCRUD\Devz.RapidCRUD.Tests\.editorconfig" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="D:\Code\Dapper.FastCRUD\Dapper.FastCrud.Tests\.editorconfig" />
+    <None Include="D:\Code\Devz.RapidCRUD\Devz.RapidCRUD.Tests\.editorconfig" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,14 +1,14 @@
-﻿namespace Dapper.FastCrud.Tests
+﻿namespace Devz.RapidCRUD.Tests
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Threading.Tasks;
-    using Dapper.FastCrud.Tests.Common;
-    using Dapper.FastCrud.Tests.Contexts;
-    using Dapper.FastCrud.Tests.Models.CodeFirst;
-    using Dapper.FastCrud.Tests.Models.Metadata;
-    using Dapper.FastCrud.Tests.Models.Poco;
+    using Devz.RapidCRUD.Tests.Common;
+    using Devz.RapidCRUD.Tests.Contexts;
+    using Devz.RapidCRUD.Tests.Models.CodeFirst;
+    using Devz.RapidCRUD.Tests.Models.Metadata;
+    using Devz.RapidCRUD.Tests.Models.Poco;
     using NUnit.Framework;
     using TechTalk.SpecFlow;
 

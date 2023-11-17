@@ -1,7 +1,7 @@
-﻿namespace Dapper.FastCrud.SqlBuilders.Dialects
+﻿namespace Devz.RapidCRUD.SqlBuilders.Dialects
 {
-    using Dapper.FastCrud.EntityDescriptors;
-    using Dapper.FastCrud.Mappings.Registrations;
+    using Devz.RapidCRUD.EntityDescriptors;
+    using Devz.RapidCRUD.Mappings.Registrations;
     using System;
     using System.Linq;
 

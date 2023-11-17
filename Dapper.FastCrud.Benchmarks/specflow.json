@@ -1,7 +1,7 @@
   {
     "stepAssemblies": [
         {
-          "assembly": "Dapper.FastCrud.Tests"
+          "assembly": "Devz.RapidCRUD.Tests"
         }
       ]
   }

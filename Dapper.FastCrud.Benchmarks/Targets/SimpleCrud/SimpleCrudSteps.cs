@@ -1,12 +1,12 @@
-﻿namespace Dapper.FastCrud.Benchmarks.SimpleCrud
+﻿namespace Devz.RapidCRUD.Benchmarks.SimpleCrud
 {
-    using Dapper.FastCrud.Benchmarks.Models;
-    using Dapper.FastCrud.Tests.Contexts;
+    using Devz.RapidCRUD.Benchmarks.Models;
+    using Devz.RapidCRUD.Tests.Contexts;
     using NUnit.Framework;
     using System.Collections;
     using System.Reflection;
     using TechTalk.SpecFlow;
-    using SimpleCrud = global::Dapper.SimpleCRUD;
+    using SimpleCrud = global::Devz.SimpleCRUD;
 
     [Binding]
     public class SimpleCrudSteps:EntityGenerationSteps

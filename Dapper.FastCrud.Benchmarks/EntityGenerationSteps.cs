@@ -1,9 +1,9 @@
-﻿namespace Dapper.FastCrud.Benchmarks
+﻿namespace Devz.RapidCRUD.Benchmarks
 {
-    using Dapper.FastCrud.Benchmarks.Models;
+    using Devz.RapidCRUD.Benchmarks.Models;
     using System;
     using System.Data.SqlTypes;
-    using Dapper.FastCrud.Tests.Models;
+    using Devz.RapidCRUD.Tests.Models;
 
     public class EntityGenerationSteps
     {

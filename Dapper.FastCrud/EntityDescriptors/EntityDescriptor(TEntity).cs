@@ -1,12 +1,12 @@
-﻿namespace Dapper.FastCrud.EntityDescriptors
+﻿namespace Devz.RapidCRUD.EntityDescriptors
 {
     using System;
     using System.Threading;
-    using Dapper.FastCrud.Mappings;
-    using Dapper.FastCrud.Mappings.Registrations;
-    using Dapper.FastCrud.SqlBuilders;
-    using Dapper.FastCrud.SqlBuilders.Dialects;
-    using Dapper.FastCrud.SqlStatements;
+    using Devz.RapidCRUD.Mappings;
+    using Devz.RapidCRUD.Mappings.Registrations;
+    using Devz.RapidCRUD.SqlBuilders;
+    using Devz.RapidCRUD.SqlBuilders.Dialects;
+    using Devz.RapidCRUD.SqlStatements;
 
     /// <summary>
     /// Typed entity descriptor, capable of producing statement builders associated with default entity mappings.

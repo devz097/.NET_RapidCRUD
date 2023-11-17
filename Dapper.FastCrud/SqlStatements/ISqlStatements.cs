@@ -1,10 +1,10 @@
-﻿namespace Dapper.FastCrud.SqlStatements
+﻿namespace Devz.RapidCRUD.SqlStatements
 {
     using System.Collections.Generic;
     using System.Data;
     using System.Threading.Tasks;
-    using Dapper.FastCrud.Configuration.StatementOptions.Aggregated;
-    using Dapper.FastCrud.SqlBuilders;
+    using Devz.RapidCRUD.Configuration.StatementOptions.Aggregated;
+    using Devz.RapidCRUD.SqlBuilders;
 
     internal interface ISqlStatements
     {

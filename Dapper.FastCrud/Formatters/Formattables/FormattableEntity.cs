@@ -1,8 +1,8 @@
-﻿namespace Dapper.FastCrud.Formatters.Formattables
+﻿namespace Devz.RapidCRUD.Formatters.Formattables
 {
-    using Dapper.FastCrud.EntityDescriptors;
-    using Dapper.FastCrud.Mappings.Registrations;
-    using Dapper.FastCrud.Validations;
+    using Devz.RapidCRUD.EntityDescriptors;
+    using Devz.RapidCRUD.Mappings.Registrations;
+    using Devz.RapidCRUD.Validations;
     using System;
 
     /// <summary>
@@ -48,7 +48,7 @@
         public string? LegacyDefaultFormatSpecifierOutsideOurFormatter { get; }
 
         /// <summary>
-        /// Applies formatting to the current instance. For more information, see <seealso cref="Sql.Entity{TEntity}(string?,Dapper.FastCrud.Mappings.EntityMapping{TEntity}?)"/>.
+        /// Applies formatting to the current instance. For more information, see <seealso cref="Sql.Entity{TEntity}(string?,Devz.RapidCRUD.Mappings.EntityMapping{TEntity}?)"/>.
         /// </summary>
         /// <param name="format"> An optional format specifier.</param>
         /// <param name="formatProvider">The provider to use to format the value.</param>
@@ -85,7 +85,7 @@
                 default:
                     if (formatProvider is GenericSqlStatementFormatter)
                     {
-                        throw new InvalidOperationException($"Unknown format specifier '{format}' specified for an entity in Dapper.FastCrud");
+                        throw new InvalidOperationException($"Unknown format specifier '{format}' specified for an entity in Devz.RapidCRUD");
                     }
 
                     // for generic usage, we'll return the table name or alias if provided, without delimiters

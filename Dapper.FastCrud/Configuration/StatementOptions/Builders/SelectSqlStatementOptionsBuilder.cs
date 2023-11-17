@@ -1,6 +1,6 @@
-﻿namespace Dapper.FastCrud.Configuration.StatementOptions.Builders
+﻿namespace Devz.RapidCRUD.Configuration.StatementOptions.Builders
 {
-    using Dapper.FastCrud.Configuration.StatementOptions.Builders.Aggregated;
+    using Devz.RapidCRUD.Configuration.StatementOptions.Builders.Aggregated;
 
     /// <summary>
     /// Single statement options builder for a single record select.

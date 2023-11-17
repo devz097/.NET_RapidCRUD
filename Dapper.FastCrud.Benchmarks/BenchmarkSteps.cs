@@ -1,7 +1,7 @@
-﻿namespace Dapper.FastCrud.Benchmarks
+﻿namespace Devz.RapidCRUD.Benchmarks
 {
-    using Dapper.FastCrud.Tests.Common;
-    using Dapper.FastCrud.Tests.Contexts;
+    using Devz.RapidCRUD.Tests.Common;
+    using Devz.RapidCRUD.Tests.Contexts;
     using NUnit.Framework;
     using System;
     using System.Collections;

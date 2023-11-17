@@ -1,4 +1,4 @@
-﻿namespace Dapper.FastCrud.Configuration
+﻿namespace Devz.RapidCRUD.Configuration
 {
     using System;
 

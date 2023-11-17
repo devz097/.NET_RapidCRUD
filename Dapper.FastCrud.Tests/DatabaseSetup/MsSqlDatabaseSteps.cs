@@ -1,8 +1,8 @@
-﻿namespace Dapper.FastCrud.Tests.DatabaseSetup
+﻿namespace Devz.RapidCRUD.Tests.DatabaseSetup
 {
     using System.IO;
     using System.Text.RegularExpressions;
-    using Dapper.FastCrud.Tests.Contexts;
+    using Devz.RapidCRUD.Tests.Contexts;
     using Microsoft.Data.SqlClient;
     using Microsoft.Extensions.Configuration;
     using Microsoft.SqlServer.Management.Common;

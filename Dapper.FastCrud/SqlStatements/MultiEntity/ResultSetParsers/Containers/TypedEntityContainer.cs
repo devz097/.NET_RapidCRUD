@@ -1,7 +1,7 @@
-﻿namespace Dapper.FastCrud.SqlStatements.MultiEntity.ResultSetParsers.Containers
+﻿namespace Devz.RapidCRUD.SqlStatements.MultiEntity.ResultSetParsers.Containers
 {
-    using Dapper.FastCrud.Extensions;
-    using Dapper.FastCrud.Validations;
+    using Devz.RapidCRUD.Extensions;
+    using Devz.RapidCRUD.Validations;
     using System;
     using System.Collections;
     using System.Collections.Generic;
@@ -133,7 +133,7 @@
                 return _hashCode.Value;
             }
 
-            /// <summary>Returns a value that indicates whether the values of two <see cref="T:Dapper.FastCrud.SqlStatements.MultiEntity.ResultSetParsers.Containers.EntityContainer.LocalEntityCollectionKey" /> objects are equal.</summary>
+            /// <summary>Returns a value that indicates whether the values of two <see cref="T:Devz.RapidCRUD.SqlStatements.MultiEntity.ResultSetParsers.Containers.EntityContainer.LocalEntityCollectionKey" /> objects are equal.</summary>
             /// <param name="left">The first value to compare.</param>
             /// <param name="right">The second value to compare.</param>
             /// <returns>true if the <paramref name="left" /> and <paramref name="right" /> parameters have the same value; otherwise, false.</returns>
@@ -142,7 +142,7 @@
                 return Equals(left, right);
             }
 
-            /// <summary>Returns a value that indicates whether two <see cref="T:Dapper.FastCrud.SqlStatements.MultiEntity.ResultSetParsers.Containers.EntityContainer.LocalEntityCollectionKey" /> objects have different values.</summary>
+            /// <summary>Returns a value that indicates whether two <see cref="T:Devz.RapidCRUD.SqlStatements.MultiEntity.ResultSetParsers.Containers.EntityContainer.LocalEntityCollectionKey" /> objects have different values.</summary>
             /// <param name="left">The first value to compare.</param>
             /// <param name="right">The second value to compare.</param>
             /// <returns>true if <paramref name="left" /> and <paramref name="right" /> are not equal; otherwise, false.</returns>

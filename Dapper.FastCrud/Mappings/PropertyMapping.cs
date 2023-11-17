@@ -1,7 +1,7 @@
-﻿namespace Dapper.FastCrud.Mappings
+﻿namespace Devz.RapidCRUD.Mappings
 {
-    using Dapper.FastCrud.Mappings.Registrations;
-    using Dapper.FastCrud.Validations;
+    using Devz.RapidCRUD.Mappings.Registrations;
+    using Devz.RapidCRUD.Validations;
     using System;
     using System.ComponentModel.DataAnnotations.Schema;
 

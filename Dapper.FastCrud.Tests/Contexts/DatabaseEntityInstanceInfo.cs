@@ -1,4 +1,4 @@
-﻿namespace Dapper.FastCrud.Tests.Contexts
+﻿namespace Devz.RapidCRUD.Tests.Contexts
 {
     using System;
 

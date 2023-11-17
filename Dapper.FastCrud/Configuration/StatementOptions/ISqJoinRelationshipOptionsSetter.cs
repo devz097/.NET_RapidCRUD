@@ -1,4 +1,4 @@
-﻿namespace Dapper.FastCrud.Configuration.StatementOptions
+﻿namespace Devz.RapidCRUD.Configuration.StatementOptions
 {
     using System;
     using System.Collections.Generic;

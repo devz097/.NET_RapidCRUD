@@ -8,12 +8,12 @@ using System.Runtime.InteropServices;
 
 [assembly: CLSCompliant(true)]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyDescription("Dapper.FastCRUD is built around essential features of the C# 6 / VB 14 that have finally raised the simplicity of raw SQL constructs to acceptable maintenance levels. These features leave no chance to mistypings or problems arising from db entity refactorings. VS2015 or an equivalent build environment is recommended.")]
-[assembly: AssemblyProduct("Dapper.FastCRUD")]
-[assembly: AssemblyCopyright("Copyright © 2022 Dapper.FastCRUD contributors")]
+[assembly: AssemblyDescription("Devz.RapidCRUD is built around essential features of the C# 6 / VB 14 that have finally raised the simplicity of raw SQL constructs to acceptable maintenance levels. These features leave no chance to mistypings or problems arising from db entity refactorings. VS2015 or an equivalent build environment is recommended.")]
+[assembly: AssemblyProduct("Devz.RapidCRUD")]
+[assembly: AssemblyCopyright("Copyright ï¿½ 202Devz.RapidCRUDUD contributors")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
-[assembly: AssemblyTitle("Dapper.FastCRUD")]
+[assembly: AssemblyTitle("Devz.RapidCRUD")]
 [assembly: NeutralResourcesLanguage("en")]
 [assembly: ComVisible(false)]
 
@@ -36,6 +36,6 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
 
-[assembly: InternalsVisibleTo("Dapper.FastCrud.Tests")]
-[assembly: InternalsVisibleTo("Dapper.FastCrud.Benchmarks")]
+[assembly: InternalsVisibleTo("Devz.RapidCRUD.Tests")]
+[assembly: InternalsVisibleTo("Devz.RapidCRUD.Benchmarks")]
 [assembly: InternalsVisibleTo("DynamicProxyGenAssembly2")]

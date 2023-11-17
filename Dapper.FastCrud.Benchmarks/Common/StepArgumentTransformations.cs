@@ -1,7 +1,7 @@
-﻿namespace Dapper.FastCrud.Benchmarks.Common
+﻿namespace Devz.RapidCRUD.Benchmarks.Common
 {
     using System;
-    using Dapper.FastCrud.Benchmarks.Models;
+    using Devz.RapidCRUD.Benchmarks.Models;
     using TechTalk.SpecFlow;
 
     [Binding]

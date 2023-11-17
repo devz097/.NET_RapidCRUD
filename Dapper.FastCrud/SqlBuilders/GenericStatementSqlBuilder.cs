@@ -1,17 +1,17 @@
-﻿namespace Dapper.FastCrud.SqlBuilders
+﻿namespace Devz.RapidCRUD.SqlBuilders
 {
-    using Dapper.FastCrud.Configuration.StatementOptions;
+    using Devz.RapidCRUD.Configuration.StatementOptions;
     using System;
     using System.Globalization;
     using System.Linq;
     using System.Linq.Expressions;
     using System.Runtime.CompilerServices;
     using System.Threading;
-    using Dapper.FastCrud.EntityDescriptors;
-    using Dapper.FastCrud.Formatters;
-    using Dapper.FastCrud.Mappings.Registrations;
-    using Dapper.FastCrud.SqlStatements.MultiEntity;
-    using Dapper.FastCrud.Validations;
+    using Devz.RapidCRUD.EntityDescriptors;
+    using Devz.RapidCRUD.Formatters;
+    using Devz.RapidCRUD.Mappings.Registrations;
+    using Devz.RapidCRUD.SqlStatements.MultiEntity;
+    using Devz.RapidCRUD.Validations;
     using System.Text;
 
     internal abstract class GenericStatementSqlBuilder:ISqlBuilder

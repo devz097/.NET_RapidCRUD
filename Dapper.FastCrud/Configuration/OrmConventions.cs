@@ -1,4 +1,4 @@
-﻿namespace Dapper.FastCrud.Configuration
+﻿namespace Devz.RapidCRUD.Configuration
 {
     using System;
     using System.Collections.Generic;
@@ -8,9 +8,9 @@
     using System.Linq;
     using System.Reflection;
     using System.Text.RegularExpressions;
-    using Dapper.FastCrud.Configuration.DialectOptions;
-    using Dapper.FastCrud.Mappings;
-    using Dapper.FastCrud.Mappings.Registrations;
+    using Devz.RapidCRUD.Configuration.DialectOptions;
+    using Devz.RapidCRUD.Mappings;
+    using Devz.RapidCRUD.Mappings.Registrations;
     using System.Collections;
 
     /// <summary>

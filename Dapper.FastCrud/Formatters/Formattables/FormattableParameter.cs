@@ -1,8 +1,8 @@
-﻿namespace Dapper.FastCrud.Formatters.Formattables
+﻿namespace Devz.RapidCRUD.Formatters.Formattables
 {
-    using Dapper.FastCrud.EntityDescriptors;
-    using Dapper.FastCrud.Mappings.Registrations;
-    using Dapper.FastCrud.Validations;
+    using Devz.RapidCRUD.EntityDescriptors;
+    using Devz.RapidCRUD.Mappings.Registrations;
+    using Devz.RapidCRUD.Validations;
     using System;
 
     /// <summary>

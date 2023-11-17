@@ -1,9 +1,9 @@
-﻿namespace Dapper.FastCrud.Tests.Common
+﻿namespace Devz.RapidCRUD.Tests.Common
 {
     using System;
-    using Dapper.FastCrud.Tests.Models.CodeFirst;
-    using Dapper.FastCrud.Tests.Models.Metadata;
-    using Dapper.FastCrud.Tests.Models.Poco;
+    using Devz.RapidCRUD.Tests.Models.CodeFirst;
+    using Devz.RapidCRUD.Tests.Models.Metadata;
+    using Devz.RapidCRUD.Tests.Models.Poco;
     using Google.Protobuf.Reflection;
     using TechTalk.SpecFlow;
 

@@ -1,6 +1,6 @@
-﻿namespace Dapper.FastCrud.Extensions
+﻿namespace Devz.RapidCRUD.Extensions
 {
-    using Dapper.FastCrud.Validations;
+    using Devz.RapidCRUD.Validations;
     using System;
     using System.Collections;
     using System.ComponentModel;

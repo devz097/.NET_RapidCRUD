@@ -15,6 +15,6 @@ steps:
   displayName: 'Pushing the artifact $(buildArtifactName) to nuget.org'
   inputs:
     command: 'push'
-    packagesToPush: '$(Pipeline.Workspace)/$(buildArtifactName)/**/Dapper.FastCrud.*.nupkg'
+    packagesToPush: '$(Pipeline.Workspace)/$(buildArtifactName)/**/Devz.RapidCRUD.*.nupkg'
     nuGetFeedType: 'external'
     publishFeedCredentials: 'nuget.org'

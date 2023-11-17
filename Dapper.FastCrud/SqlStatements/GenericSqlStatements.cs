@@ -1,17 +1,17 @@
-﻿namespace Dapper.FastCrud.SqlStatements
+﻿namespace Devz.RapidCRUD.SqlStatements
 {
     using System.Collections.Generic;
     using System.Data;
     using System.Linq;
     using System.Runtime.CompilerServices;
     using System.Threading.Tasks;
-    using Dapper.FastCrud.Configuration.StatementOptions.Aggregated;
-    using Dapper.FastCrud.Mappings.Registrations;
-    using Dapper.FastCrud.SqlBuilders;
-    using Dapper.FastCrud.SqlStatements.MultiEntity;
-    using Dapper.FastCrud.SqlStatements.MultiEntity.ResultSetParsers;
-    using Dapper.FastCrud.SqlStatements.MultiEntity.ResultSetParsers.Containers;
-    using Dapper.FastCrud.Validations;
+    using Devz.RapidCRUD.Configuration.StatementOptions.Aggregated;
+    using Devz.RapidCRUD.Mappings.Registrations;
+    using Devz.RapidCRUD.SqlBuilders;
+    using Devz.RapidCRUD.SqlStatements.MultiEntity;
+    using Devz.RapidCRUD.SqlStatements.MultiEntity.ResultSetParsers;
+    using Devz.RapidCRUD.SqlStatements.MultiEntity.ResultSetParsers.Containers;
+    using Devz.RapidCRUD.Validations;
     using System;
 
     /// <summary>

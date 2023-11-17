@@ -1,4 +1,4 @@
-﻿namespace Dapper.FastCrud.Mappings.Registrations
+﻿namespace Devz.RapidCRUD.Mappings.Registrations
 {
     /// <summary>
     /// Type of relationship between two entities.

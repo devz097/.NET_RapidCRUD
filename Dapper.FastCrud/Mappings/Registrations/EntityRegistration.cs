@@ -1,7 +1,7 @@
-﻿namespace Dapper.FastCrud.Mappings.Registrations
+﻿namespace Devz.RapidCRUD.Mappings.Registrations
 {
-    using Dapper.FastCrud.SqlBuilders;
-    using Dapper.FastCrud.Validations;
+    using Devz.RapidCRUD.SqlBuilders;
+    using Devz.RapidCRUD.Validations;
     using System;
     using System.Collections.Generic;
     using System.ComponentModel;

@@ -1,11 +1,11 @@
-﻿namespace Dapper.FastCrud.Tests.Contexts
+﻿namespace Devz.RapidCRUD.Tests.Contexts
 {
     using System;
     using System.Collections.Generic;
     using System.Data.Common;
     using System.Diagnostics;
     using System.Linq;
-    using Dapper.FastCrud.Tests.Common;
+    using Devz.RapidCRUD.Tests.Common;
     using Newtonsoft.Json;
 
     public class DatabaseTestContext
@@ -24,7 +24,7 @@
                 };
         }
 
-        public string DatabaseName { get; } = "FastCrudTestDatabaseF8D8B1E3"; // we need something fairly unique here
+        public string DatabaseName { get; } = "RapidCRUDTestDatabaseF8D8B1E3"; // we need something fairly unique here
         public string CurrentExecutionFolder { get; } = typeof(DatabaseTestContext).Assembly.GetDirectory();
         public Stopwatch Stopwatch { get; } = new Stopwatch();
         public DbConnection DatabaseConnection { get; set; }

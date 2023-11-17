@@ -1,6 +1,6 @@
-﻿namespace Dapper.FastCrud.SqlStatements.MultiEntity.ResultSetParsers
+﻿namespace Devz.RapidCRUD.SqlStatements.MultiEntity.ResultSetParsers
 {
-    using Dapper.FastCrud.SqlStatements.MultiEntity.ResultSetParsers.Containers;
+    using Devz.RapidCRUD.SqlStatements.MultiEntity.ResultSetParsers.Containers;
     using System.Collections.Generic;
 
     /// <summary>

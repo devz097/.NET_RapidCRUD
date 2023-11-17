@@ -1,9 +1,9 @@
-﻿namespace Dapper.FastCrud.Formatters
+﻿namespace Devz.RapidCRUD.Formatters
 {
-    using Dapper.FastCrud.EntityDescriptors;
-    using Dapper.FastCrud.Formatters.Contexts;
-    using Dapper.FastCrud.Mappings.Registrations;
-    using Dapper.FastCrud.Validations;
+    using Devz.RapidCRUD.EntityDescriptors;
+    using Devz.RapidCRUD.Formatters.Contexts;
+    using Devz.RapidCRUD.Mappings.Registrations;
+    using Devz.RapidCRUD.Validations;
     using System;
     using System.Collections.Generic;
 
@@ -129,7 +129,7 @@
                 case string stringArg:
                     if (string.IsNullOrEmpty(stringArg))
                     {
-                        throw new InvalidOperationException("Empty argument passed as an argument to the Dapper.FastCrud formatter");
+                        throw new InvalidOperationException("Empty argument passed as an argument to the Devz.RapidCRUD formatter");
                     }
 
                     // if we got no format but we got an alias, we'll default to fully qualified column
@@ -164,7 +164,7 @@
                         case null:
                             return stringArg;
                         default:
-                            throw new InvalidOperationException($"Unknown format specifier '{format}' specified for a string argument to Dapper.FastCrud");
+                            throw new InvalidOperationException($"Unknown format specifier '{format}' specified for a string argument to Devz.RapidCRUD");
                     }
                     break;
                 case Type typeArg:
@@ -181,7 +181,7 @@
                             // output: "[alias_or_table]"
                             return this.FormatTypeOrAliasOrNothing(typeArg.Name);
                         default:
-                            throw new InvalidOperationException($"Unknown format specifier '{format}' specified for a type argument to Dapper.FastCrud");
+                            throw new InvalidOperationException($"Unknown format specifier '{format}' specified for a type argument to Devz.RapidCRUD");
                     }
                 default:
                     // try again, but this time with the object converted to a string

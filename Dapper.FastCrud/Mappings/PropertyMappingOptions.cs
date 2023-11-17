@@ -1,4 +1,4 @@
-﻿namespace Dapper.FastCrud.Mappings
+﻿namespace Devz.RapidCRUD.Mappings
 {
     using System;
 

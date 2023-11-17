@@ -1,4 +1,4 @@
-﻿namespace Dapper.FastCrud.Configuration.DialectOptions
+﻿namespace Devz.RapidCRUD.Configuration.DialectOptions
 {
     internal class PostreSqlDatabaseOptions : SqlDatabaseOptions
     {

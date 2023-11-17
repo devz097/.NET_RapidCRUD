@@ -1,11 +1,11 @@
-﻿namespace Dapper.FastCrud.Configuration.StatementOptions.Aggregated
+﻿namespace Devz.RapidCRUD.Configuration.StatementOptions.Aggregated
 {
-    using Dapper.FastCrud.EntityDescriptors;
-    using Dapper.FastCrud.Formatters;
-    using Dapper.FastCrud.Formatters.Contexts;
+    using Devz.RapidCRUD.EntityDescriptors;
+    using Devz.RapidCRUD.Formatters;
+    using Devz.RapidCRUD.Formatters.Contexts;
     using System;
-    using Dapper.FastCrud.Mappings.Registrations;
-    using Dapper.FastCrud.Validations;
+    using Devz.RapidCRUD.Mappings.Registrations;
+    using Devz.RapidCRUD.Validations;
     using System.Collections.Generic;
 
     /// <summary>

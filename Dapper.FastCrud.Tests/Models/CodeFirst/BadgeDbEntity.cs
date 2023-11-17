@@ -1,9 +1,9 @@
-﻿namespace Dapper.FastCrud.Tests.Models.CodeFirst
+﻿namespace Devz.RapidCRUD.Tests.Models.CodeFirst
 {
     using System;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
-    using Dapper.FastCrud.Tests.Models.Metadata;
+    using Devz.RapidCRUD.Tests.Models.Metadata;
 
     /// <summary>
     /// A code first approach to mapping.

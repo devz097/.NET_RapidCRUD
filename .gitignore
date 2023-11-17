@@ -10,4 +10,4 @@ obj
 /.nunit/gui
 /TestResult.xml
 /Thumbs.db
-/Dapper.FastCRUD/project.lock.json
+/Devz.RapidCRUD/project.lock.json

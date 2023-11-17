@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
-    <AssemblyTitle>Dapper.FastCrud.Benchmarks</AssemblyTitle>
-    <AssemblyName>Dapper.FastCrud.Benchmarks</AssemblyName>
+    <AssemblyTitle>Devz.RapidCRUD.Benchmarks</AssemblyTitle>
+    <AssemblyName>Devz.RapidCRUD.Benchmarks</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Dapper.SimpleCRUD" Version="2.3.0" />
+    <PackageReference Include="Devz.SimpleCRUD" Version="2.3.0" />
     <PackageReference Include="DapperExtensions" Version="1.7.0" />
     <PackageReference Include="MartinCostello.SqlLocalDb" Version="3.2.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.3" />
@@ -38,8 +38,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Dapper.FastCrud.Tests\Dapper.FastCrud.Tests.csproj" />
-    <ProjectReference Include="..\Dapper.FastCrud\Dapper.FastCrud.csproj" />
+    <ProjectReference Include="..\Devz.RapidCRUD.Tests\Devz.RapidCRUD.Tests.csproj" />
+    <ProjectReference Include="..\Devz.RapidCRUD\Devz.RapidCRUD.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,6 +1,6 @@
-﻿namespace Dapper.FastCrud.Configuration.StatementOptions.Builders
+﻿namespace Devz.RapidCRUD.Configuration.StatementOptions.Builders
 {
-    using Dapper.FastCrud.Configuration.StatementOptions.Builders.Aggregated;
+    using Devz.RapidCRUD.Configuration.StatementOptions.Builders.Aggregated;
 
     /// <summary>
     /// Standard sql options builder for a statement.

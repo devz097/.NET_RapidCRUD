@@ -1,9 +1,9 @@
-﻿namespace Dapper.FastCrud.Formatters.Contexts
+﻿namespace Devz.RapidCRUD.Formatters.Contexts
 {
-    using Dapper.FastCrud.EntityDescriptors;
-    using Dapper.FastCrud.Mappings.Registrations;
-    using Dapper.FastCrud.SqlBuilders;
-    using Dapper.FastCrud.Validations;
+    using Devz.RapidCRUD.EntityDescriptors;
+    using Devz.RapidCRUD.Mappings.Registrations;
+    using Devz.RapidCRUD.SqlBuilders;
+    using Devz.RapidCRUD.Validations;
     using System;
     using System.Threading;
 

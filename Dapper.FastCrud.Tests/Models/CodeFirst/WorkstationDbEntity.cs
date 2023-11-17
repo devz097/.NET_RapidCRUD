@@ -1,10 +1,10 @@
-﻿namespace Dapper.FastCrud.Tests.Models.CodeFirst
+﻿namespace Devz.RapidCRUD.Tests.Models.CodeFirst
 {
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
-    using Dapper.FastCrud.Tests.Models.Metadata;
-    using Dapper.FastCrud.Tests.Models.Poco;
+    using Devz.RapidCRUD.Tests.Models.Metadata;
+    using Devz.RapidCRUD.Tests.Models.Poco;
 
     /// <summary>
     /// A code first approach to mapping.
@@ -28,7 +28,7 @@
         /// <summary>
         /// AccessLevel Column
         /// </summary>
-        [Dapper.FastCrud.DatabaseGeneratedDefaultValue]
+        [Devz.RapidCRUD.DatabaseGeneratedDefaultValue]
         public virtual int AccessLevel { get; set; }
 
         /// <summary>

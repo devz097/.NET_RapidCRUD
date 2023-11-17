@@ -1,7 +1,7 @@
-﻿namespace Dapper.FastCrud.Formatters.Contexts
+﻿namespace Devz.RapidCRUD.Formatters.Contexts
 {
-    using Dapper.FastCrud.Mappings.Registrations;
-    using Dapper.FastCrud.Validations;
+    using Devz.RapidCRUD.Mappings.Registrations;
+    using Devz.RapidCRUD.Validations;
     using System;
     using System.Collections.Generic;
     using System.Linq;

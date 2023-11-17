@@ -1,9 +1,9 @@
-﻿namespace Dapper.FastCrud.EntityDescriptors
+﻿namespace Devz.RapidCRUD.EntityDescriptors
 {
     using System;
-    using Dapper.FastCrud.Mappings.Registrations;
-    using Dapper.FastCrud.SqlBuilders;
-    using Dapper.FastCrud.SqlStatements;
+    using Devz.RapidCRUD.Mappings.Registrations;
+    using Devz.RapidCRUD.SqlBuilders;
+    using Devz.RapidCRUD.SqlStatements;
     using System.Runtime.CompilerServices;
 
     /// <summary>

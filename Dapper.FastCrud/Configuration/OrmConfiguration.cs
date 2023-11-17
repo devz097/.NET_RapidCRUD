@@ -1,17 +1,17 @@
 ﻿// ReSharper disable once CheckNamespace (the namespace is intentionally not in sync with the file location) 
-namespace Dapper.FastCrud
+namespace Devz.RapidCRUD
 {
     using System;
     using System.Runtime.CompilerServices;
-    using Dapper.FastCrud.Configuration;
-    using Dapper.FastCrud.EntityDescriptors;
-    using Dapper.FastCrud.Mappings;
-    using Dapper.FastCrud.Mappings.Registrations;
-    using Dapper.FastCrud.Validations;
+    using Devz.RapidCRUD.Configuration;
+    using Devz.RapidCRUD.EntityDescriptors;
+    using Devz.RapidCRUD.Mappings;
+    using Devz.RapidCRUD.Mappings.Registrations;
+    using Devz.RapidCRUD.Validations;
     using System.Collections.Generic;
 
     /// <summary>
-    /// Sets up various FastCrud settings.
+    /// Sets up various RapidCRUD settings.
     /// </summary>
     public static class OrmConfiguration
     {

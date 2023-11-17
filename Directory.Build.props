@@ -13,15 +13,15 @@
 
     <Description>
       You hate verbatim SQL queries with zero type safety for your code but you love the speed?
-      Dapper.FastCRUD is built around essential features of the C# 6 / VB that  have finally raised the simplicity of raw SQL constructs to acceptable maintenance levels. 
+      Devz.RapidCRUD is built around essential features of the C# 6 / VB that  have finally raised the simplicity of raw SQL constructs to acceptable maintenance levels. 
       These features leave no chance to mistypings or problems arising from db entity refactorings. 
       Visual Studio 2019 or later is recommended.
     </Description>
-    <Authors>Dapper.FastCRUD Contributors</Authors>
+    <Authors>Devz.RapidCRUD Contributors</Authors>
     <Version>1.0.0-preview</Version>
     <MinClientVersion>3.3</MinClientVersion>
     <!-- deprecated but still in use -->
-    <PackageIconUrl>https://raw.githubusercontent.com/MoonStorm/FastCrud/master/logo.png</PackageIconUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/MoonStorm/RapidCRUD/master/logo.png</PackageIconUrl>
     <PackageIcon>logo.png</PackageIcon>
     <!-- deprecated -->
     <!-- <PackageLicenseUrl>http://www.opensource.org/licenses/MIT</PackageLicenseUrl> -->
@@ -31,7 +31,7 @@
     <Summary>The fastest micro-orm for Dapper</Summary>
     <Company />
     <Copyright />
-    <PackageProjectUrl>https://github.com/MoonStorm/FastCrud</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/MoonStorm/RapidCRUD</PackageProjectUrl>
 
     <!--<RunAnalyzersDuringLiveAnalysis>false</RunAnalyzersDuringLiveAnalysis>-->
     <!--<SkipDefaultEditorConfigAsAdditionalFile>true</SkipDefaultEditorConfigAsAdditionalFile>-->
@@ -39,11 +39,11 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="!$(MSBuildProjectName.Contains('.Tests.'))">
-    <!-- <CodeAnalysisRuleSet>$(MSBuildThisFileDirectory)Dapper.FastCrud.ruleset</CodeAnalysisRuleSet> -->
+    <!-- <CodeAnalysisRuleSet>$(MSBuildThisFileDirectory)Devz.RapidCRUD.ruleset</CodeAnalysisRuleSet> -->
   </PropertyGroup>
 
   <PropertyGroup Condition="$(MSBuildProjectName.Contains('.Tests.'))">
-    <!--<CodeAnalysisRuleSet>$(MSBuildThisFileDirectory)Dapper.FastCrud.Tests.ruleset</CodeAnalysisRuleSet>-->
+    <!--<CodeAnalysisRuleSet>$(MSBuildThisFileDirectory)Devz.RapidCRUD.Tests.ruleset</CodeAnalysisRuleSet>-->
   </PropertyGroup>
 
   <ItemGroup>

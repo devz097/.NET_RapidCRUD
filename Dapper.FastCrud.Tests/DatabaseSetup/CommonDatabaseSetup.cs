@@ -1,8 +1,8 @@
-﻿namespace Dapper.FastCrud.Tests.DatabaseSetup
+﻿namespace Devz.RapidCRUD.Tests.DatabaseSetup
 {
     using System.ComponentModel.DataAnnotations.Schema;
-    using Dapper.FastCrud.Tests.Models.Poco;
-    using Dapper.FastCrud.Validations;
+    using Devz.RapidCRUD.Tests.Models.Poco;
+    using Devz.RapidCRUD.Validations;
     using Microsoft.Extensions.Configuration;
 
     public class CommonDatabaseSetup

@@ -1,7 +1,7 @@
-﻿namespace Dapper.FastCrud.Mappings
+﻿namespace Devz.RapidCRUD.Mappings
 {
-    using Dapper.FastCrud.Extensions;
-    using Dapper.FastCrud.Mappings.Registrations;
+    using Devz.RapidCRUD.Extensions;
+    using Devz.RapidCRUD.Mappings.Registrations;
     using System;
     using System.Collections;
     using System.Collections.Generic;

@@ -1,6 +1,6 @@
-﻿namespace Dapper.FastCrud.SqlStatements.MultiEntity.ResultSetParsers
+﻿namespace Devz.RapidCRUD.SqlStatements.MultiEntity.ResultSetParsers
 {
-    using Dapper.FastCrud.SqlStatements.MultiEntity.ResultSetParsers.Containers;
+    using Devz.RapidCRUD.SqlStatements.MultiEntity.ResultSetParsers.Containers;
 
     /// <summary>
     /// A result set parser made up of multiple multiple result sets

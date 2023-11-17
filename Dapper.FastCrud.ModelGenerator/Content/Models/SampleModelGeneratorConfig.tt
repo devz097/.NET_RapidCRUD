@@ -25,7 +25,7 @@ You can right click on your configuration file and click on "Debug T4 Template" 
 	ConnectionStringName = ""; 
 
 	// The namespace for your generated entities.
-	Namespace = "Dapper.FastCrud.Models";
+	Namespace = "Devz.RapidCRUD.Models";
 
 	// An optional prefix to be used for the class names.
 	ClassPrefix = "";
@@ -43,13 +43,13 @@ You can right click on your configuration file and click on "Debug T4 Template" 
     IncludeRelationships = true;
 
 	// When set to false, the generated properties mapped to columns having default values will be refreshed with the database assigned values on insert.
-    // When set to false, a FastCrud attribute will be used since this functionality is not covered by the regular component model data annotations.
+    // When set to false, a RapidCRUD attribute will be used since this functionality is not covered by the regular component model data annotations.
 	IgnoreColumnDefaultValues = true; 
 
 	// Table or schema qualified table and view names can be excluded via this property.
 	ExcludeTablePrefixes = new string[]{"ELMAH", "AspNet_", "HangFire."};
 #>
-<#@ include file="$(DapperFastCrudModelGeneratorPath)GenericModelGenerator.tt" #>
+<#@ include file="$(DapperRapidCRUDModelGeneratorPath)GenericModelGenerator.tt" #>
 <#+
 	void ConfigureTableMappings(Tables tables){
 		/*

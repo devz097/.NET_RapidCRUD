@@ -1,6 +1,6 @@
 ## Entity generation using a database first approach (limited to SQL Server)
 
-Entity generation can be performed by installing the NuGet package ``Dapper.FastCrud.ModelGenerator`` and by creating  
+Entity generation can be performed by installing the NuGet package ``Devz.RapidCRUD.ModelGenerator`` and by creating  
 your own (``*Config.tt``) files that use the generic template provided in this package. 
 Head over to the wiki section on the project website for more details.
 

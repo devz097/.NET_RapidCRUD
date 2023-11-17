@@ -1,7 +1,7 @@
-You hate verbatim SQL queries with zero type safety for your code but you love the speed? ``Dapper.FastCrud`` is a fast orm built around essential features of the C# 6 / VB 14 that have finally raised the simplicity of raw SQL constructs to acceptable maintenance levels. These features leave no chance to mistypings or problems arising from db entity refactorings.
+You hate verbatim SQL queries with zero type safety for your code but you love the speed? ``Devz.RapidCRUD`` is a fast orm built around essential features of the C# 6 / VB 14 that have finally raised the simplicity of raw SQL constructs to acceptable maintenance levels. These features leave no chance to mistypings or problems arising from db entity refactorings.
 Visual Studio 2019 and above is recommended. 
 
-## What to expect when working with Dapper.FastCrud in the DAL? 
+## What to expect when working with Devz.RapidCRUD in the DAL? 
 Type safety, clean code, less prone to errors, more peace of mind, while still being close to the metal. Here's a sample for 3.0:
 ```
     var queryParams = new 
@@ -33,7 +33,7 @@ Type safety, clean code, less prone to errors, more peace of mind, while still b
 - Compatible with component model data annotations.
 - Opt-in relationships. As of 3.0, self referenced entities and multiple joins to the same target are also supported via aliases.
 - A set of "formattables" are also included, which can be used even if you don't need the CRUD features of this library but you want to take advantage of the DB mappings.
-- A generic T4 template for C# is also provided for convenience in the NuGet package Dapper.FastCrud.ModelGenerator.
+- A generic T4 template for C# is also provided for convenience in the NuGet package Devz.RapidCRUD.ModelGenerator.
 - The following mapping styles are supported:
   - Database first (limited to SQL Server)
   - Code first, using model data annotations (preferred)

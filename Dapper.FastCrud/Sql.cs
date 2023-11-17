@@ -1,14 +1,14 @@
-﻿namespace Dapper.FastCrud
+﻿namespace Devz.RapidCRUD
 {
-    using Dapper.FastCrud.Configuration;
-    using Dapper.FastCrud.EntityDescriptors;
-    using Dapper.FastCrud.Extensions;
-    using Dapper.FastCrud.Formatters;
+    using Devz.RapidCRUD.Configuration;
+    using Devz.RapidCRUD.EntityDescriptors;
+    using Devz.RapidCRUD.Extensions;
+    using Devz.RapidCRUD.Formatters;
     using System;
     using System.Runtime.CompilerServices;
-    using Dapper.FastCrud.Formatters.Formattables;
-    using Dapper.FastCrud.Mappings;
-    using Dapper.FastCrud.Validations;
+    using Devz.RapidCRUD.Formatters.Formattables;
+    using Devz.RapidCRUD.Mappings;
+    using Devz.RapidCRUD.Validations;
     using System.Linq.Expressions;
 
     /// <summary>
@@ -20,7 +20,7 @@
 
         /// <summary>
         /// Returns a formattable SQL parameter.
-        /// When used with the FastCrud's formatter, it defaults to the "P" specifier (e.g. @Param).
+        /// When used with the RapidCRUD's formatter, it defaults to the "P" specifier (e.g. @Param).
         /// When used with any other formatter, it defaults to the raw parameter name
         ///   but the "P" specifier is still available in this mode.
         /// </summary>
@@ -38,7 +38,7 @@
 
         /// <summary>
         /// Returns a formattable SQL identifier.
-        /// When used with the FastCrud's formatter, it defaults to the "I" specifier (e.g. [Identifier]).
+        /// When used with the RapidCRUD's formatter, it defaults to the "I" specifier (e.g. [Identifier]).
         /// When used with any other formatter, it defaults to the raw identifier but the "I" specifier is still available in this mode.
         /// Do not use this method for table or column names.
         /// </summary>
@@ -56,7 +56,7 @@
 
         /// <summary>
         /// Returns a formattable database entity.
-        /// When used with the FastCrud's formatter, it has no default but responds to the "T" specifier for table or alias.
+        /// When used with the RapidCRUD's formatter, it has no default but responds to the "T" specifier for table or alias.
         /// When used with any other formatter, it defaults to the raw alias (if provided) or the table name associated with the entity
         ///   but the "T" specifier is still available in this mode as well.
         /// </summary>
@@ -71,7 +71,7 @@
 
         /// <summary>
         /// Returns a formattable property of a database entity.
-        /// When used with the FastCrud's formatter, it has no default but responds to
+        /// When used with the RapidCRUD's formatter, it has no default but responds to
         ///   the "T" specifier for table or alias or
         ///   the "C" specifier for the single column name or
         ///   the "TC" specifier for a fully qualified SQL column.
@@ -92,7 +92,7 @@
 
         /// <summary>
         /// Returns a formattable database table associated with an entity.
-        /// For consistency, it is recommended to use <see cref="Entity{TEntity}(string?,Dapper.FastCrud.Mappings.EntityMapping{TEntity}?)"/> instead.
+        /// For consistency, it is recommended to use <see cref="Entity{TEntity}(string?,Devz.RapidCRUD.Mappings.EntityMapping{TEntity}?)"/> instead.
         /// Irrespective of the formatter used, it defaults to the "T" specifier for table or alias.
         /// </summary>
         /// <param name="alias">An alias to be used instead of the table name.</param>
@@ -110,8 +110,8 @@
 
         /// <summary>
         /// Returns a formattable database column associated with a property.
-        /// For consistency, it is recommended to use <see cref="Entity{TEntity}(System.Linq.Expressions.Expression{System.Func{TEntity,object?}},string?,Dapper.FastCrud.Mappings.EntityMapping{TEntity}?)"/> instead.
-        /// Irrespective of the formatter used, it defaults to the "C" specifier, however when using with the FastCrud's formatter it also responds to 
+        /// For consistency, it is recommended to use <see cref="Entity{TEntity}(System.Linq.Expressions.Expression{System.Func{TEntity,object?}},string?,Devz.RapidCRUD.Mappings.EntityMapping{TEntity}?)"/> instead.
+        /// Irrespective of the formatter used, it defaults to the "C" specifier, however when using with the RapidCRUD's formatter it also responds to 
         ///   the "T" specifier for table or alias or
         ///   the "TC" specifier for a fully qualified SQL column.
         /// </summary>
@@ -128,8 +128,8 @@
 
         /// <summary>
         /// Returns a formattable database column associated with a property.
-        /// For consistency, it is recommended to use <see cref="Entity{TEntity}(System.Linq.Expressions.Expression{System.Func{TEntity,object?}},string?,Dapper.FastCrud.Mappings.EntityMapping{TEntity}?)"/> instead.
-        /// Irrespective of the formatter used, it defaults to the "C" specifier, however when using with the FastCrud's formatter it also responds to 
+        /// For consistency, it is recommended to use <see cref="Entity{TEntity}(System.Linq.Expressions.Expression{System.Func{TEntity,object?}},string?,Devz.RapidCRUD.Mappings.EntityMapping{TEntity}?)"/> instead.
+        /// Irrespective of the formatter used, it defaults to the "C" specifier, however when using with the RapidCRUD's formatter it also responds to 
         ///   the "T" specifier for table or alias or
         ///   the "TC" specifier for a fully qualified SQL column.
         /// </summary>
@@ -146,8 +146,8 @@
 
         /// <summary>
         /// Returns a fully qualified formattable database column associated with a property.
-        /// For consistency, it is recommended to use <see cref="Entity{TEntity}(System.Linq.Expressions.Expression{System.Func{TEntity,object?}},string?,Dapper.FastCrud.Mappings.EntityMapping{TEntity}?)"/> instead.
-        /// Irrespective of the formatter used, it defaults to the "TC" specifier, however when using with the FastCrud's formatter it also responds to 
+        /// For consistency, it is recommended to use <see cref="Entity{TEntity}(System.Linq.Expressions.Expression{System.Func{TEntity,object?}},string?,Devz.RapidCRUD.Mappings.EntityMapping{TEntity}?)"/> instead.
+        /// Irrespective of the formatter used, it defaults to the "TC" specifier, however when using with the RapidCRUD's formatter it also responds to 
         ///   the "T" specifier for table or alias or
         ///   the "C" specifier for a single column.
         /// </summary>
@@ -166,8 +166,8 @@
 
         /// <summary>
         /// Returns a fully qualified formattable database column associated with a property.
-        /// For consistency, it is recommended to use <see cref="Entity{TEntity}(System.Linq.Expressions.Expression{System.Func{TEntity,object?}},string?,Dapper.FastCrud.Mappings.EntityMapping{TEntity}?)"/> instead.
-        /// Irrespective of the formatter used, it defaults to the "TC" specifier, however when using with the FastCrud's formatter it also responds to 
+        /// For consistency, it is recommended to use <see cref="Entity{TEntity}(System.Linq.Expressions.Expression{System.Func{TEntity,object?}},string?,Devz.RapidCRUD.Mappings.EntityMapping{TEntity}?)"/> instead.
+        /// Irrespective of the formatter used, it defaults to the "TC" specifier, however when using with the RapidCRUD's formatter it also responds to 
         ///   the "T" specifier for table or alias or
         ///   the "C" specifier for a single column.
         /// </summary>

@@ -1,7 +1,7 @@
-﻿namespace Dapper.FastCrud.Benchmarks.Targets.DapperExtensions
+﻿namespace Devz.RapidCRUD.Benchmarks.Targets.DapperExtensions
 {
-    using global::Dapper.FastCrud.Benchmarks.Models;
-    using global::Dapper.FastCrud.Tests.Contexts;
+    using global::Devz.RapidCRUD.Benchmarks.Models;
+    using global::Devz.RapidCRUD.Tests.Contexts;
     using global::DapperExtensions;
     using global::DapperExtensions.Mapper;
     using global::DapperExtensions.Sql;

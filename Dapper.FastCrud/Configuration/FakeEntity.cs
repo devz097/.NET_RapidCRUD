@@ -1,4 +1,4 @@
-﻿namespace Dapper.FastCrud.Configuration
+﻿namespace Devz.RapidCRUD.Configuration
 {
     /// <summary>
     /// Used in cases where we don't really need an entity, just a random SQL builder or a placeholder for legacy methods.

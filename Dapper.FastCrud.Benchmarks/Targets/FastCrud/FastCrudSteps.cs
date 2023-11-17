@@ -1,20 +1,20 @@
-﻿namespace Dapper.FastCrud.Benchmarks.Targets.FastCrud
+﻿namespace Devz.RapidCRUD.Benchmarks.Targets.RapidCRUD
 {
-    using global::Dapper.FastCrud.Benchmarks.Models;
-    using global::Dapper.FastCrud.Tests.Contexts;
+    using global::Devz.RapidCRUD.Benchmarks.Models;
+    using global::Devz.RapidCRUD.Tests.Contexts;
     using NUnit.Framework;
     using System.Collections;
     using System.Linq;
     using System.Reflection;
     using TechTalk.SpecFlow;
-    using FastCrud = global::Dapper.FastCrud.DapperExtensions;
+    using RapidCRUD = global::Devz.RapidCRUD.DapperExtensions;
 
     [Binding]
-    public class FastCrudTests : EntityGenerationSteps
+    public class RapidCRUDTests : EntityGenerationSteps
     {
         private readonly DatabaseTestContext _testContext;
 
-        public FastCrudTests(DatabaseTestContext testContext)
+        public RapidCRUDTests(DatabaseTestContext testContext)
         {
             _testContext = testContext;
         }
@@ -23,13 +23,13 @@
         public static void TestSetup()
         {
             // clear caches
-            var fastCrudCachePropInfo = typeof(OrmConfiguration).GetField("_entityDescriptorCache", BindingFlags.Static | BindingFlags.NonPublic);
-            var fastCrudCacheInstance = fastCrudCachePropInfo.GetValue(null);
-            ((IDictionary)fastCrudCacheInstance).Clear();
+            var RapidCRUDCachePropInfo = typeof(OrmConfiguration).GetField("_entityDescriptorCache", BindingFlags.Static | BindingFlags.NonPublic);
+            var RapidCRUDCacheInstance = RapidCRUDCachePropInfo.GetValue(null);
+            ((IDictionary)RapidCRUDCacheInstance).Clear();
         }
 
         [When(@"I insert (.*) benchmark entities using Fast Crud")]
-        public void WhenIInsertSingleIntKeyEntitiesUsingFastCrud(int entitiesCount)
+        public void WhenIInsertSingleIntKeyEntitiesUsingRapidCRUD(int entitiesCount)
         {
             var dbConnection = _testContext.DatabaseConnection;
 
@@ -37,7 +37,7 @@
             {
                 var generatedEntity = this.GenerateSimpleBenchmarkEntity(entityIndex);
 
-                FastCrud.Insert(dbConnection, generatedEntity);
+                RapidCRUD.Insert(dbConnection, generatedEntity);
                 // the entity already has the associated id set
 
                 Assert.Greater(generatedEntity.Id, 1); // the seed starts from 2 in the db to avoid confusion with the number of rows modified
@@ -49,17 +49,17 @@
         public void ThenIShouldHaveSingleIntKeyEntitiesInTheDatabase(int entitiesCount)
         {
             var dbConnection = _testContext.DatabaseConnection;
-            var entities =  FastCrud.Find<SimpleBenchmarkEntity>(dbConnection);
+            var entities =  RapidCRUD.Find<SimpleBenchmarkEntity>(dbConnection);
             Assert.That(entities.Count(), Is.EqualTo(entitiesCount));
         }
 
         [When(@"I select all the benchmark entities using Fast Crud (\d+) times")]
-        public void WhenISelectAllTheSingleIntKeyEntitiesUsingFastCrud(int opCount)
+        public void WhenISelectAllTheSingleIntKeyEntitiesUsingRapidCRUD(int opCount)
         {
             var dbConnection = _testContext.DatabaseConnection;
             while (--opCount >= 0)
             {
-                foreach (var queriedEntity in FastCrud.Find<SimpleBenchmarkEntity>(dbConnection))
+                foreach (var queriedEntity in RapidCRUD.Find<SimpleBenchmarkEntity>(dbConnection))
                 {
                     if (opCount == 0)
                     {
@@ -70,17 +70,17 @@
         }
 
         [When(@"I select all the benchmark entities that I previously inserted using Fast Crud")]
-        public void WhenISelectAllTheSingleIntKeyEntitiesThatIPreviouslyInsertedUsingFastCrud()
+        public void WhenISelectAllTheSingleIntKeyEntitiesThatIPreviouslyInsertedUsingRapidCRUD()
         {
             var dbConnection = _testContext.DatabaseConnection;
             foreach (var entity in _testContext.GetInsertedEntitiesOfType<SimpleBenchmarkEntity>())
             {
-                _testContext.RecordQueriedEntity(FastCrud.Get(dbConnection, new SimpleBenchmarkEntity() {Id = entity.Id}));
+                _testContext.RecordQueriedEntity(RapidCRUD.Get(dbConnection, new SimpleBenchmarkEntity() {Id = entity.Id}));
             }
         }
 
         [When(@"I update all the benchmark entities that I previously inserted using Fast Crud")]
-        public void WhenIUpdateAllTheSingleIntKeyEntitiesThatIPreviouslyInsertedUsingFastCrud()
+        public void WhenIUpdateAllTheSingleIntKeyEntitiesThatIPreviouslyInsertedUsingRapidCRUD()
         {
             var dbConnection = _testContext.DatabaseConnection;
 
@@ -89,19 +89,19 @@
             {
                 var newEntity = this.GenerateSimpleBenchmarkEntity(entityIndex++);
                 newEntity.Id = oldEntity.Id;
-                FastCrud.Update(dbConnection, newEntity);
+                RapidCRUD.Update(dbConnection, newEntity);
                 _testContext.RecordUpdatedEntity(newEntity);
             }
         }
 
         [When(@"I delete all the inserted benchmark entities using Fast Crud")]
-        public void WhenIDeleteAllTheInsertedSingleIntKeyEntitiesUsingFastCrud()
+        public void WhenIDeleteAllTheInsertedSingleIntKeyEntitiesUsingRapidCRUD()
         {
             var dbConnection = _testContext.DatabaseConnection;
 
             foreach (var entity in _testContext.GetInsertedEntitiesOfType<SimpleBenchmarkEntity>())
             {
-                FastCrud.Delete(dbConnection, entity);
+                RapidCRUD.Delete(dbConnection, entity);
             }
         }
     }

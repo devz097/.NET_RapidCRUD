@@ -1,8 +1,8 @@
-﻿namespace Dapper.FastCrud.Tests.Models.Poco
+﻿namespace Devz.RapidCRUD.Tests.Models.Poco
 {
     using System.Collections.Generic;
-    using Dapper.FastCrud.Tests.DatabaseSetup;
-    using Dapper.FastCrud.Tests.Models.CodeFirst;
+    using Devz.RapidCRUD.Tests.DatabaseSetup;
+    using Devz.RapidCRUD.Tests.Models.CodeFirst;
 
     /// <summary>
     /// Entity used for POCO tests.

@@ -1,4 +1,4 @@
-﻿namespace Dapper.FastCrud.Benchmarks.Models
+﻿namespace Devz.RapidCRUD.Benchmarks.Models
 {
     using System;
     using System.ComponentModel.DataAnnotations;

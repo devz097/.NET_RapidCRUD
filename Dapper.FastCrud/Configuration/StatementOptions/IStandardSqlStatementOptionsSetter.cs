@@ -1,8 +1,8 @@
-﻿namespace Dapper.FastCrud.Configuration.StatementOptions
+﻿namespace Devz.RapidCRUD.Configuration.StatementOptions
 {
     using System;
     using System.Data;
-    using Dapper.FastCrud.Mappings;
+    using Devz.RapidCRUD.Mappings;
 
     /// <summary>
     /// Standard sql options setter for a statement.

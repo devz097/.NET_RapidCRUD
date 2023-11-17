@@ -1,4 +1,4 @@
-﻿namespace Dapper.FastCrud.Validations
+﻿namespace Devz.RapidCRUD.Validations
 {
     using System;
     using System.Collections;

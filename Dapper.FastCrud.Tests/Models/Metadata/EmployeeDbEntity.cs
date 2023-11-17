@@ -1,10 +1,10 @@
-﻿namespace Dapper.FastCrud.Tests.Models.Metadata
+﻿namespace Devz.RapidCRUD.Tests.Models.Metadata
 {
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
-    using Dapper.FastCrud.Tests.Models.CodeFirst;
-    using Dapper.FastCrud.Tests.Models.Poco;
+    using Devz.RapidCRUD.Tests.Models.CodeFirst;
+    using Devz.RapidCRUD.Tests.Models.Poco;
     
     /// <summary>
     /// Metadata is set up in a separate class.

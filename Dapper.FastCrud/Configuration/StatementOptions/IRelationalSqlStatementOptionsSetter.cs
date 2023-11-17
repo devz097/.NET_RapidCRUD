@@ -1,7 +1,7 @@
-﻿namespace Dapper.FastCrud.Configuration.StatementOptions
+﻿namespace Devz.RapidCRUD.Configuration.StatementOptions
 {
     using System;
-    using Dapper.FastCrud.Configuration.StatementOptions.Builders;
+    using Devz.RapidCRUD.Configuration.StatementOptions.Builders;
 
     /// <summary>
     /// Statement options for entity relationships

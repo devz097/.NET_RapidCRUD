@@ -9,7 +9,7 @@ TIP #2: You can right click on this file and click on "Debug T4 Template" to loc
 	// Settings
     ConnectionStringName = ""; // Uses last connection string in config if not specified
 	ConfigPath = @""; //Looks in current project for web.config or app.config by default. You can override it to point to a different config file.
-    Namespace = "Dapper.FastCrud.Tests.Models.Unused";
+    Namespace = "Devz.RapidCRUD.Tests.Models.Unused";
 	ClassPrefix = ""; 
 	ClassSuffix = "Entity";
 	InvalidPropertyNamePrefix = "Prop";
@@ -18,7 +18,7 @@ TIP #2: You can right click on this file and click on "Debug T4 Template" to loc
 	IgnoreColumnDefaultValues = false; 
 	ExcludeTablePrefixes = new string[]{"ELMAH", "AspNet_", "dtproperties", "NormalizedUsageLog", "HangFire.", "Building"};
 #>
-<#@ include file="..\..\..\Dapper.FastCRUD.ModelGenerator\Content\Models\GenericModelGenerator.tt" #> 
+<#@ include file="..\..\..\Devz.RapidCRUD.ModelGenerator\Content\Models\GenericModelGenerator.tt" #> 
 <#+
 	void ConfigureTableMappings(Tables tables)
 	{

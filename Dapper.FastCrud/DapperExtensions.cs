@@ -1,16 +1,16 @@
 ﻿using System.Runtime.CompilerServices;
 
-[assembly: InternalsVisibleTo("Dapper.FastCrud.Tests")]
+[assembly: InternalsVisibleTo("Devz.RapidCRUD.Tests")]
 
-namespace Dapper.FastCrud
+namespace Devz.RapidCRUD
 {
-    using Dapper.FastCrud.Configuration.StatementOptions.Aggregated;
+    using Devz.RapidCRUD.Configuration.StatementOptions.Aggregated;
     using System;
     using System.Collections.Generic;
     using System.Data;
     using System.Threading.Tasks;
-    using Dapper.FastCrud.Configuration.StatementOptions.Builders;
-    using Dapper.FastCrud.SqlStatements;
+    using Devz.RapidCRUD.Configuration.StatementOptions.Builders;
+    using Devz.RapidCRUD.SqlStatements;
 
     /// <summary>
     /// Class for Dapper extensions

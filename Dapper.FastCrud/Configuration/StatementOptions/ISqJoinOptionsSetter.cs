@@ -1,8 +1,8 @@
-﻿namespace Dapper.FastCrud.Configuration.StatementOptions
+﻿namespace Devz.RapidCRUD.Configuration.StatementOptions
 {
-    using Dapper.FastCrud.Configuration.StatementOptions.Builders;
+    using Devz.RapidCRUD.Configuration.StatementOptions.Builders;
     using System;
-    using Dapper.FastCrud.Mappings;
+    using Devz.RapidCRUD.Mappings;
 
     /// <summary>
     /// Includes the set of options used in JOIN statements.

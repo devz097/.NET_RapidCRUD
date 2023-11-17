@@ -1,11 +1,11 @@
-﻿namespace Dapper.FastCrud.Tests
+﻿namespace Devz.RapidCRUD.Tests
 {
     using System;
     using System.Linq;
-    using Dapper.FastCrud.SqlBuilders;
-    using Dapper.FastCrud.Tests.Models;
-    using Dapper.FastCrud.Tests.Models.CodeFirst;
-    using Dapper.FastCrud.Tests.Models.Poco;
+    using Devz.RapidCRUD.SqlBuilders;
+    using Devz.RapidCRUD.Tests.Models;
+    using Devz.RapidCRUD.Tests.Models.CodeFirst;
+    using Devz.RapidCRUD.Tests.Models.Poco;
     using NUnit.Framework;
     using TechTalk.SpecFlow;
 

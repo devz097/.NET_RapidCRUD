@@ -1,10 +1,10 @@
-﻿namespace Dapper.FastCrud.Tests.Models.Metadata
+﻿namespace Devz.RapidCRUD.Tests.Models.Metadata
 {
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
-    using Dapper.FastCrud.Tests.Models.CodeFirst;
+    using Devz.RapidCRUD.Tests.Models.CodeFirst;
 
 #pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
 
@@ -20,11 +20,11 @@
         public object UserId { get; } // just a marker, the accessors don't matter since they won't be used
 
         [Key]
-        [Dapper.FastCrud.DatabaseGeneratedDefaultValue]
+        [Devz.RapidCRUD.DatabaseGeneratedDefaultValue]
         [Column(Order = 2)] // can specify the order without the name
         public virtual Guid EmployeeId { get; }
 
-        [Dapper.FastCrud.DatabaseGeneratedDefaultValue]
+        [Devz.RapidCRUD.DatabaseGeneratedDefaultValue]
         public virtual Guid KeyPass { get; }
 
         [ForeignKey(nameof(EmployeeDbEntity.Workstation))]

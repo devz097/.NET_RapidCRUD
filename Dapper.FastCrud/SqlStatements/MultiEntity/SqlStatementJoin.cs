@@ -1,13 +1,13 @@
-﻿namespace Dapper.FastCrud.SqlStatements.MultiEntity
+﻿namespace Devz.RapidCRUD.SqlStatements.MultiEntity
 {
-    using Dapper.FastCrud.Configuration.StatementOptions;
-    using Dapper.FastCrud.Configuration.StatementOptions.Aggregated;
-    using Dapper.FastCrud.EntityDescriptors;
-    using Dapper.FastCrud.Formatters;
-    using Dapper.FastCrud.Formatters.Contexts;
-    using Dapper.FastCrud.Mappings.Registrations;
-    using Dapper.FastCrud.SqlBuilders;
-    using Dapper.FastCrud.Validations;
+    using Devz.RapidCRUD.Configuration.StatementOptions;
+    using Devz.RapidCRUD.Configuration.StatementOptions.Aggregated;
+    using Devz.RapidCRUD.EntityDescriptors;
+    using Devz.RapidCRUD.Formatters;
+    using Devz.RapidCRUD.Formatters.Contexts;
+    using Devz.RapidCRUD.Mappings.Registrations;
+    using Devz.RapidCRUD.SqlBuilders;
+    using Devz.RapidCRUD.Validations;
     using System;
     using System.Collections.Generic;
     using System.ComponentModel;

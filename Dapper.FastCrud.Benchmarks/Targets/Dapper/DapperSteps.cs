@@ -1,7 +1,7 @@
-﻿namespace Dapper.FastCrud.Benchmarks.Targets.Dapper
+﻿namespace Devz.RapidCRUD.Benchmarks.Targets.Dapper
 {
-    using global::Dapper.FastCrud.Benchmarks.Models;
-    using global::Dapper.FastCrud.Tests.Contexts;
+    using global::Devz.RapidCRUD.Benchmarks.Models;
+    using global::Devz.RapidCRUD.Tests.Contexts;
     using NUnit.Framework;
     using System;
     using Dapper;
@@ -33,7 +33,7 @@
         public static void TestSetup()
         {
             // clear caches
-            var dapperQueryCachePropInfo = typeof(global::Dapper.SqlMapper).GetField("_queryCache", BindingFlags.NonPublic | BindingFlags.Static);
+            var dapperQueryCachePropInfo = typeof(global::Devz.SqlMapper).GetField("_queryCache", BindingFlags.NonPublic | BindingFlags.Static);
             var dapperQueryCacheInstance = dapperQueryCachePropInfo.GetValue(null);
             ((IDictionary)dapperQueryCacheInstance).Clear();
         }

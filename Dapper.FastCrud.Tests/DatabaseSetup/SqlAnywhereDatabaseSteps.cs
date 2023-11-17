@@ -1,7 +1,7 @@
-﻿namespace Dapper.FastCrud.Tests.DatabaseSetup
+﻿namespace Devz.RapidCRUD.Tests.DatabaseSetup
 {
     using System.Data.Odbc;
-    using Dapper.FastCrud.Tests.Contexts;
+    using Devz.RapidCRUD.Tests.Contexts;
     using Microsoft.Extensions.Configuration;
     using System.Data.SQLite;
     using TechTalk.SpecFlow;

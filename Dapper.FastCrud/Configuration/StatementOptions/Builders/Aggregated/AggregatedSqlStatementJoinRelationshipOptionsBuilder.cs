@@ -1,9 +1,9 @@
-﻿namespace Dapper.FastCrud.Configuration.StatementOptions.Builders.Aggregated
+﻿namespace Devz.RapidCRUD.Configuration.StatementOptions.Builders.Aggregated
 {
     using System;
-    using Dapper.FastCrud.Configuration.StatementOptions.Aggregated;
-    using Dapper.FastCrud.Extensions;
-    using Dapper.FastCrud.Validations;
+    using Devz.RapidCRUD.Configuration.StatementOptions.Aggregated;
+    using Devz.RapidCRUD.Extensions;
+    using Devz.RapidCRUD.Validations;
     using System.Collections.Generic;
     using System.Linq.Expressions;
 

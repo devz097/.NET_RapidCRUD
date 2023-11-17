@@ -1,7 +1,7 @@
-﻿namespace Dapper.FastCrud.Configuration.StatementOptions.Aggregated
+﻿namespace Devz.RapidCRUD.Configuration.StatementOptions.Aggregated
 {
-    using Dapper.FastCrud.EntityDescriptors;
-    using Dapper.FastCrud.Validations;
+    using Devz.RapidCRUD.EntityDescriptors;
+    using Devz.RapidCRUD.Validations;
     using System.ComponentModel;
 
     /// <summary>

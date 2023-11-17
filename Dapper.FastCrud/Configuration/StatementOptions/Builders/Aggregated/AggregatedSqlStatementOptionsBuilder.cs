@@ -1,10 +1,10 @@
-﻿namespace Dapper.FastCrud.Configuration.StatementOptions.Builders.Aggregated
+﻿namespace Devz.RapidCRUD.Configuration.StatementOptions.Builders.Aggregated
 {
     using System;
     using System.Data;
-    using Dapper.FastCrud.Configuration.StatementOptions.Aggregated;
-    using Dapper.FastCrud.Mappings;
-    using Dapper.FastCrud.Validations;
+    using Devz.RapidCRUD.Configuration.StatementOptions.Aggregated;
+    using Devz.RapidCRUD.Mappings;
+    using Devz.RapidCRUD.Validations;
     using System.Linq;
     using System.Threading;
 

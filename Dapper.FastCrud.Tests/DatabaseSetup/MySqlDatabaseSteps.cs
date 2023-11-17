@@ -1,6 +1,6 @@
-﻿namespace Dapper.FastCrud.Tests.DatabaseSetup
+﻿namespace Devz.RapidCRUD.Tests.DatabaseSetup
 {
-    using Dapper.FastCrud.Tests.Contexts;
+    using Devz.RapidCRUD.Tests.Contexts;
     using Microsoft.Extensions.Configuration;
     using MySql.Data.MySqlClient;
     using TechTalk.SpecFlow;

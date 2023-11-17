@@ -1,32 +1,5 @@
-You hate verbatim SQL queries with zero type safety for your code but you love their speed? ``Dapper.FastCrud`` is a fast orm built around essential features of the C# 6 / VB 14 that have finally raised the simplicity of raw SQL constructs to acceptable maintenance levels. These features leave no chance to mistypings or problems arising from db entity refactorings.
+You hate verbatim SQL queries with zero type safety for your code but you love their speed? ``Devz.RapidCRUD`` is a fast orm built around essential features of the C# 6 / VB 14 that have finally raised the simplicity of raw SQL constructs to acceptable maintenance levels. These features leave no chance to mistypings or problems arising from db entity refactorings.
 Visual Studio 2019 and above is recommended. 
-
-#### What to expect when working with Dapper.FastCrud in the DAL? 
-Type safety, clean code, less prone to errors, more peace of mind, while still being close to the metal. Here's a sample for 3.0:
-```csharp
-// Create paramters for the query
-var queryParams = new 
-{
-    FirstName = "John",
-    Street = "Creek Street"
-};
-
-// Get persons using the above created query parameters
-var persons = dbConnection.Find<Person>(statement => statement
-    .WithAlias("person")
-    .Include<Address>(join =>
-		join.InnerJoin()
-		.WithAlias("address")
-	)
-	.Where($@"
-       {nameof(Person.FirstName):of person} = {nameof(queryParams.FirstName):P} 
-       AND {nameof(Address.Street):of address} = {nameof(queryParams.Street):P}
-	")
-	.OrderBy($"{nameof(Person.LastName):of person} DESC")  
-    .Skip(10)
-    .Top(20)
-    .WithParameters(queryParams);
-```
 
 #### Features:
 - Support for LocalDb, Ms Sql Server, MySql, SqLite, PostgreSql and SAP/Sybase Anywhere SQL.
@@ -37,7 +10,7 @@ var persons = dbConnection.Find<Person>(statement => statement
 - Compatible with component model data annotations.
 - Opt-in relationships. As of 3.0, self referenced entities and multiple joins to the same target are also supported via aliases.
 - A set of "formattables" are also included, which can be used even if you don't need the CRUD features of this library but you want to take advantage of the DB mappings.
-- A generic T4 template for C# is also provided for convenience in the NuGet package Dapper.FastCrud.ModelGenerator.
+- A generic T4 template for C# is also provided for convenience in the NuGet package Devz.RapidCRUD.ModelGenerator.
 - The following mapping styles are supported:
   - Database first (limited to SQL Server)
   - Code first, using model data annotations (preferred)
@@ -45,18 +18,14 @@ var persons = dbConnection.Find<Person>(statement => statement
   - Semi-POCO using metadata objects
 
 
-#### Active Versions
-- 3.1 [![Build Status](https://moonstorm.visualstudio.com/FastCrud/_apis/build/status/Release%20Branch%20Build%20Pipeline?repoName=MoonStorm%2FFastCrud&branchName=release)](https://moonstorm.visualstudio.com/FastCrud/_build/latest?definitionId=10&repoName=MoonStorm%2FFastCrud&branchName=release)
-Check the [release notes](https://github.com/MoonStorm/FastCrud/wiki/Release-notes) for information about the recent changes or the readme info published on NuGet. 
-
 #### WIKI
-[The wiki](https://github.com/MoonStorm/FastCrud/wiki) is a great place for learning more about this library.
+[The wiki](https://github.com/Devz/RapidCRUD/wiki) is a great place for learning more about this library.
 
 
 #### Speed
 Let's have a look at some popular ORMs out there and benchmark their speed:  
 
-- ``Dapper.SimpleCRUD v2.3.0``
+- ``Devz.SimpleCRUD v2.3.0``
 - ``DapperExtensions v1.7.0 ``
 - ``Entity Framework Core v7.0.3`` 
 
@@ -101,5 +70,5 @@ The tests are following the same steps and are running in the same environment o
 
 You can find more details about how to run the benchmarks yourself in the wiki.
 
-##### Install [the main library](https://www.nuget.org/packages/Dapper.FastCrud/) and [the model generator](https://www.nuget.org/packages/Dapper.FastCrud.ModelGenerator/) via NuGet and enjoy!
+##### Install [the main library](https://www.nuget.org/packages/Devz.RapidCRUD/) and [the model generator](https://www.nuget.org/packages/Devz.RapidCRUD.ModelGenerator/) via NuGet and enjoy!
 

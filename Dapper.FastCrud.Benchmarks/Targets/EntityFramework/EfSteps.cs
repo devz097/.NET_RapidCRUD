@@ -1,7 +1,7 @@
-﻿namespace Dapper.FastCrud.Benchmarks.Targets.EntityFramework
+﻿namespace Devz.RapidCRUD.Benchmarks.Targets.EntityFramework
 {
-    using global::Dapper.FastCrud.Benchmarks.Models;
-    using global::Dapper.FastCrud.Tests.Contexts;
+    using global::Devz.RapidCRUD.Benchmarks.Models;
+    using global::Devz.RapidCRUD.Tests.Contexts;
     using Microsoft.EntityFrameworkCore;
     using NUnit.Framework;
     using System.Collections.Generic;
